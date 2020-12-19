@@ -80,21 +80,18 @@ h3 {
 }
 
 .wrapper {
-  border: 1px solid;
   margin: auto;
   max-width: 1020px;
 }
 
 @media screen and (max-width: 1020px) {
   .wrapper {
-    border: 1px solid;
     margin: auto;
     max-width: 768px;
   }
 }
 @media (max-width: 768px) {
   .wrapper {
-    border: 1px solid;
     margin: auto;
     max-width: 375px;
   }
@@ -182,6 +179,11 @@ h3 {
   padding: 4px;
 }
 
+.nav-portfolio li:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .image-list ul {
   margin: 0 auto;
   display: flex;
@@ -218,7 +220,8 @@ h3 {
 @media (max-width: 1020px) {
   .image {
     min-width: 220px;
-    width: 50%;
+    width: 25%;
+    height: 200px;
   }
 }
 
@@ -545,6 +548,13 @@ span {
   width: 14px;
   height: 14px;
   background: url(../assets/img/ico-linkedin--nocircle.png) no-repeat;
+}
+
+.social li:hover {
+  background-color: #b5bdd8;
+  cursor: pointer;
+  border: 2px solid;
+  border-color: #666d89;
 }
 
 /*# sourceMappingURL=style.css.map */

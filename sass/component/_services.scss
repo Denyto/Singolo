@@ -13,16 +13,18 @@
   color: $color-text;
   text-align: justify;
   word-spacing: -2px;
-      @include media-laptop {
-  padding: 18px 44px 38px 40px;
+  @include media-laptop {
+    padding: 18px 44px 38px 40px;
   }
-
+    @include media-tablet {
+    padding: 18px 30px 38px 30px;
+  }
 }
 
 .services-list {
   padding-bottom: 44px;
-        @include media-laptop {
-  padding-bottom: 29px;
+  @include media-laptop {
+    padding-bottom: 29px;
   }
 }
 
@@ -35,9 +37,9 @@
   list-style: none;
   justify-content: space-between;
   align-content: space-between;
-    @include media-laptop {
-  max-width: 687px;
-  min-height: 418px;
+  @include media-laptop {
+    max-width: 687px;
+    min-height: 418px;
   }
 }
 
@@ -50,10 +52,14 @@
   height: 104px;
   color: #000000;
   overflow: hidden;
-      @include media-laptop {
-  width: 300px;
-  height: 129px;
-  padding-right: 35px;
+  @include media-laptop {
+    width: 300px;
+    height: 129px;
+    padding-right: 35px;
+  }
+      @include media-tablet {
+    padding-right: 0px;
+    margin: auto;
   }
 }
 
@@ -63,25 +69,25 @@
 }
 
 .item1 {
-  background: url(../assets/img/services-item-1.png);
+  background: url(./assets/img/services-item-1.png);
 }
 
 .item2 {
-  background: url(../assets/img/services-item-2.png);
+  background: url(./assets/img/services-item-2.png);
 }
 
 .item3 {
-  background: url(../assets/img/services-item-3.png);
+  background: url(./assets/img/services-item-3.png);
 }
 
 .item4 {
-  background: url(../assets/img/services-item-4.png);
+  background: url(./assets/img/services-item-4.png);
 }
 
 .item5 {
-  background: url(../assets/img/services-item-5.png);
+  background: url(./assets/img/services-item-5.png);
 }
 
 .item6 {
-  background: url(../assets/img/services-item-6.png);
+  background: url(./assets/img/services-item-6.png);
 }

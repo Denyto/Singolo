@@ -1,20 +1,20 @@
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Regular.ttf);
+  src: url(./assets/fonts/Lato-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Bold.ttf);
+  src: url(./assets/fonts/Lato-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Black.ttf);
+  src: url(./assets/fonts/Lato-Black.ttf);
   font-weight: 900;
   font-style: normal;
 }
@@ -29,6 +29,9 @@ h1 {
   color: $color-wite;
   @include font(25px, bold, 30px);
   letter-spacing: -0.03em;
+      @include media-tablet {
+    padding-left: 90px;
+  }
 }
 
 h2 {
@@ -38,6 +41,9 @@ h2 {
   padding-left: 40px;
   @include media-laptop {
     padding-top: 39px;
+  }
+    @include media-tablet {
+    padding-left: 28px;
   }
 }
 

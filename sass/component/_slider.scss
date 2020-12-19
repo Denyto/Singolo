@@ -19,13 +19,18 @@
 
 .slider-content {
   margin: 0 auto;
-  background: url(../assets/img/slider-content.png) no-repeat;
+  background: url(./assets/img/slider-content.png) no-repeat;
   height: 483px;
   width: 796px;
   @include media-laptop {
-    background: url(../assets/img/slider-content768.png) no-repeat;
+    background: url(./assets/img/slider-content768.png) no-repeat;
     height: 364px;
     width: 600px;
+  }
+@include media-tablet {
+  background: url(./assets/img/slider-content375.png) no-repeat;
+    height: 178px;
+    width: 293px;
   }
 }
 
@@ -33,9 +38,9 @@
   margin: 0 auto;
   width: 16px;
   height: 27px;
-  background-image: url(../assets/img/arrow-left.png);
+  background-image: url(./assets/img/arrow-left.png);
   &:hover {
-    background-image: url(../assets/img/arrow-left-hover.png);
+    background-image: url(./assets/img/arrow-left-hover.png);
     cursor: pointer;
   }
 }
@@ -44,9 +49,9 @@
   margin: 0 auto;
   width: 16px;
   height: 27px;
-  background-image: url(../assets/img/arrow-right.png);
+  background-image: url(./assets/img/arrow-right.png);
     &:hover {
-    background-image: url(../assets/img/arrow-right-hover.png);
+    background-image: url(./assets/img/arrow-right-hover.png);
     cursor: pointer;
   }
 }

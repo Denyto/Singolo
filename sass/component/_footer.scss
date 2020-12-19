@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+          @include media-tablet {
+        justify-content: center;
+      }
   }
 }
 
@@ -15,6 +18,9 @@
   line-height: 18px;
   color: $color-heading;
   padding-left: 40px;
+        @include media-tablet {
+        display: none;
+      }
 }
 
 .social {
@@ -22,6 +28,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+            @include media-tablet {
+       padding-right: 0;
+      }
 }
 
 .social li {
@@ -40,25 +49,25 @@
 .facebook {
   width: 8px;
   height: 14px;
-  background: url(../assets/img/ico-facebook--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-facebook--nocircle.png) no-repeat;
 }
 
 .google {
   width: 14px;
   height: 14px;
-  background: url(../assets/img/ico-google-plus--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-google-plus--nocircle.png) no-repeat;
 }
 
 .twitter {
   width: 14px;
   height: 12px;
-  background: url(../assets/img/ico-twitter--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-twitter--nocircle.png) no-repeat;
 }
 
 .linkedin {
   width: 14px;
   height: 14px;
-  background: url(../assets/img/ico-linkedin--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-linkedin--nocircle.png) no-repeat;
 }
 
 .social li:hover {

@@ -1,0 +1,87 @@
+.services {
+  background: $color-services;
+  box-shadow: 0 6px 1px $color-wite;
+}
+
+.services-boder {
+  height: 6px;
+}
+
+.services-text {
+  padding: 18px 44px 49px 40px;
+  @include font(18px, 300, 30px);
+  color: $color-text;
+  text-align: justify;
+  word-spacing: -2px;
+      @include media-laptop {
+  padding: 18px 44px 38px 40px;
+  }
+
+}
+
+.services-list {
+  padding-bottom: 44px;
+        @include media-laptop {
+  padding-bottom: 29px;
+  }
+}
+
+.services-list ul {
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 228px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  align-content: space-between;
+    @include media-laptop {
+  max-width: 687px;
+  min-height: 418px;
+  }
+}
+
+.services-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 32%;
+  height: 104px;
+  color: #000000;
+  overflow: hidden;
+      @include media-laptop {
+  width: 300px;
+  height: 129px;
+  padding-right: 35px;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.item1 {
+  background: url(../assets/img/services-item-1.png);
+}
+
+.item2 {
+  background: url(../assets/img/services-item-2.png);
+}
+
+.item3 {
+  background: url(../assets/img/services-item-3.png);
+}
+
+.item4 {
+  background: url(../assets/img/services-item-4.png);
+}
+
+.item5 {
+  background: url(../assets/img/services-item-5.png);
+}
+
+.item6 {
+  background: url(../assets/img/services-item-6.png);
+}

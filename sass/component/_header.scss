@@ -1,0 +1,58 @@
+.header {
+  background: $color-primary;
+  box-shadow: 0 6px 1px $color-primary-shadow;
+  padding: 29px 0px 30px 0px;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.wrapper-boder {
+  height: 6px;
+}
+
+.navigation {
+  text-align: right;
+  letter-spacing: -0.035em;
+  padding-top: 12px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  &-link {
+    padding: 0 34px 0 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    &-colored {
+      color: $color-additional;
+      text-decoration: underline;
+    }
+  }
+}
+
+ul li:first-child {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-wite;
+}
+
+.logotype {
+  display: flex;
+  padding-left: 40px;
+}
+
+a:hover {
+  color: #f06c64;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+span {
+  color: $color-additional;
+}

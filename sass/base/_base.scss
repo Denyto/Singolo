@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Lato;
+  src: url(../assets/lato/Lato-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../assets/lato/Lato-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../assets/lato/Lato-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $color-wite;
+  @include font(25px, bold, 30px);
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  color: $color-heading;
+  @include font(30px, 900, 36px);
+  padding-top: 59px;
+  padding-left: 40px;
+  @include media-laptop {
+    padding-top: 39px;
+  }
+}
+
+h3 {
+  color: $color-heading;
+  @include font(18px, 900, 18px);
+}
+
+.item {
+  width: 220px;
+  height: 77px;
+  vertical-align: middle;
+}
+
+.item-text {
+  color: $color-text;
+  text-align: justify;
+  @include font(12px, normal, 22px);
+  padding-top: 9px;
+  @include media-laptop {
+    @include font(12px, normal, 21px);
+    padding-top: 8px;
+  }
+}

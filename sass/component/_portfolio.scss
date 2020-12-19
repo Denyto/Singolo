@@ -1,0 +1,134 @@
+.portfolio {
+  background: $color-primary;
+  box-shadow: 0 6px 0px #323746;
+  &-border {
+    height: 6px;
+  }
+  &-text {
+    color: $color-text;
+    padding: 18px 44px 13px 40px;
+    @include font(18px, 300, 30px);
+    color: $color-text;
+    text-align: justify;
+    word-spacing: -1px;
+  }
+}
+
+.portfolio-wrapper {
+  padding-top: 0;
+  @include media-laptop {
+    padding-top: 19px;
+  }
+}
+
+.nav-portfolio {
+  max-width: 290px;
+  padding-left: 40px;
+  list-style: none;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  @include font(12px, normal, 12px);
+}
+
+.nav-portfolio li {
+  color: $color-text;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.nav-portfolio li:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.image-list li {
+  @include media-laptop {
+  }
+}
+
+.image-list ul {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.image {
+  width: 220px;
+  height: 187px;
+  &-list {
+    margin: 0px auto;
+    max-width: 940px;
+    min-height: 601px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    list-style: none;
+    padding-bottom: 68px;
+    padding-top: 18px;
+    & img {
+      margin: auto;
+    }
+    @include media-laptop {
+      padding: 26px 40px 66px 40px;
+    }
+  }
+  @include media-laptop {
+    min-width: 220px;
+    width: 25%;
+    height: 200px;
+  }
+}
+
+.image.item1 {
+  background: url(../assets/img/portfolio-1.png);
+}
+
+.image.item2 {
+  background: url(../assets/img/portfolio-2.png);
+}
+
+.image.item3 {
+  background: url(../assets/img/portfolio-3.png);
+}
+
+.image.item4 {
+  background: url(../assets/img/portfolio-4.png);
+}
+
+.image.item5 {
+  background: url(../assets/img/portfolio-5.png);
+}
+
+.image.item6 {
+  background: url(../assets/img/portfolio-6.png);
+}
+
+.image.item7 {
+  background: url(../assets/img/portfolio-7.png);
+}
+
+.image.item8 {
+  background: url(../assets/img/portfolio-8.png);
+}
+
+.image.item9 {
+  background: url(../assets/img/portfolio-9.png);
+}
+
+.image.item10 {
+  background: url(../assets/img/portfolio-10.png);
+}
+
+.image.item11 {
+  background: url(../assets/img/portfolio-11.png);
+}
+
+.image.item12 {
+  background: url(../assets/img/portfolio-12.png);
+}

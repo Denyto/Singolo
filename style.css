@@ -1,18 +1,18 @@
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Regular.ttf);
+  src: url(./assets/fonts/Lato-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Bold.ttf);
+  src: url(./assets/fonts/Lato-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Lato;
-  src: url(../assets/lato/Lato-Black.ttf);
+  src: url(./assets/fonts/Lato-Black.ttf);
   font-weight: 900;
   font-style: normal;
 }
@@ -30,6 +30,11 @@ h1 {
   line-height: 30px;
   letter-spacing: -0.03em;
 }
+@media (max-width: 768px) {
+  h1 {
+    padding-left: 90px;
+  }
+}
 
 h2 {
   color: #666D89;
@@ -43,6 +48,11 @@ h2 {
 @media (max-width: 1020px) {
   h2 {
     padding-top: 39px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    padding-left: 28px;
   }
 }
 
@@ -149,6 +159,11 @@ h3 {
   text-align: justify;
   word-spacing: -1px;
 }
+@media (max-width: 768px) {
+  .portfolio-text {
+    padding: 18px 30px 13px 30px;
+  }
+}
 
 .portfolio-wrapper {
   padding-top: 0;
@@ -170,6 +185,19 @@ h3 {
   font-weight: normal;
   font-style: normal;
   line-height: 12px;
+}
+@media (max-width: 768px) {
+  .nav-portfolio {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .nav-portfolio {
+    justify-content: center;
+    max-width: 177px;
+    padding-left: 0;
+    margin: auto;
+  }
 }
 
 .nav-portfolio li {
@@ -194,13 +222,12 @@ h3 {
 }
 
 .image {
-  width: 220px;
-  height: 187px;
+  width: 215px;
+  margin: 10px;
 }
 .image-list {
   margin: 0px auto;
   max-width: 940px;
-  min-height: 601px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -211,66 +238,98 @@ h3 {
 }
 .image-list img {
   margin: auto;
+  width: 100%;
+}
+@media (max-width: 1020px) {
+  .image-list img {
+    width: 100%;
+  }
 }
 @media (max-width: 1020px) {
   .image-list {
     padding: 26px 40px 66px 40px;
+    max-width: 68vw;
+  }
+}
+@media (max-width: 768px) {
+  .image-list {
+    padding: 26px 20px 66px 20px;
+    max-height: 495px;
+    overflow: hidden;
+    max-width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .image-list {
+    justify-content: center;
   }
 }
 @media (max-width: 1020px) {
   .image {
-    min-width: 220px;
-    width: 25%;
-    height: 200px;
+    width: 21vw;
+    padding: 6px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .image {
+    width: 46%;
+    padding: 6px;
+  }
+}
+@media (max-width: 375px) {
+  .image {
+    width: 33vw;
+    padding: 6px;
   }
 }
 
 .image.item1 {
-  background: url(../assets/img/portfolio-1.png);
+  background: url(./assets/img/portfolio-1.png);
 }
 
 .image.item2 {
-  background: url(../assets/img/portfolio-2.png);
+  background: url(./assets/img/portfolio-2.png);
 }
 
 .image.item3 {
-  background: url(../assets/img/portfolio-3.png);
+  background: url(./assets/img/portfolio-3.png);
 }
 
 .image.item4 {
-  background: url(../assets/img/portfolio-4.png);
+  background: url(./assets/img/portfolio-4.png);
 }
 
 .image.item5 {
-  background: url(../assets/img/portfolio-5.png);
+  background: url(./assets/img/portfolio-5.png);
 }
 
 .image.item6 {
-  background: url(../assets/img/portfolio-6.png);
+  background: url(./assets/img/portfolio-6.png);
 }
 
 .image.item7 {
-  background: url(../assets/img/portfolio-7.png);
+  background: url(./assets/img/portfolio-7.png);
 }
 
 .image.item8 {
-  background: url(../assets/img/portfolio-8.png);
+  background: url(./assets/img/portfolio-8.png);
 }
 
 .image.item9 {
-  background: url(../assets/img/portfolio-9.png);
+  background: url(./assets/img/portfolio-9.png);
 }
 
 .image.item10 {
-  background: url(../assets/img/portfolio-10.png);
+  background: url(./assets/img/portfolio-10.png);
 }
 
 .image.item11 {
-  background: url(../assets/img/portfolio-11.png);
+  background: url(./assets/img/portfolio-11.png);
 }
 
 .image.item12 {
-  background: url(../assets/img/portfolio-12.png);
+  background: url(./assets/img/portfolio-12.png);
 }
 
 .header {
@@ -282,6 +341,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .header-navigation {
+    display: none;
+  }
 }
 
 .wrapper-boder {
@@ -319,7 +383,13 @@ a {
 
 .logotype {
   display: flex;
+  align-items: center;
   padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .logotype {
+    padding-left: 20px;
+  }
 }
 
 a:hover {
@@ -355,15 +425,22 @@ span {
 
 .slider-content {
   margin: 0 auto;
-  background: url(../assets/img/slider-content.png) no-repeat;
+  background: url(./assets/img/slider-content.png) no-repeat;
   height: 483px;
   width: 796px;
 }
 @media (max-width: 1020px) {
   .slider-content {
-    background: url(../assets/img/slider-content768.png) no-repeat;
+    background: url(./assets/img/slider-content768.png) no-repeat;
     height: 364px;
     width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-content {
+    background: url(./assets/img/slider-content375.png) no-repeat;
+    height: 178px;
+    width: 293px;
   }
 }
 
@@ -371,10 +448,10 @@ span {
   margin: 0 auto;
   width: 16px;
   height: 27px;
-  background-image: url(../assets/img/arrow-left.png);
+  background-image: url(./assets/img/arrow-left.png);
 }
 .arrow-left:hover {
-  background-image: url(../assets/img/arrow-left-hover.png);
+  background-image: url(./assets/img/arrow-left-hover.png);
   cursor: pointer;
 }
 
@@ -382,10 +459,10 @@ span {
   margin: 0 auto;
   width: 16px;
   height: 27px;
-  background-image: url(../assets/img/arrow-right.png);
+  background-image: url(./assets/img/arrow-right.png);
 }
 .arrow-right:hover {
-  background-image: url(../assets/img/arrow-right-hover.png);
+  background-image: url(./assets/img/arrow-right-hover.png);
   cursor: pointer;
 }
 
@@ -411,6 +488,11 @@ span {
 @media (max-width: 1020px) {
   .services-text {
     padding: 18px 44px 38px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .services-text {
+    padding: 18px 30px 38px 30px;
   }
 }
 
@@ -457,6 +539,12 @@ span {
     padding-right: 35px;
   }
 }
+@media (max-width: 768px) {
+  .services-list li {
+    padding-right: 0px;
+    margin: auto;
+  }
+}
 
 .logo {
   width: 60px;
@@ -464,27 +552,27 @@ span {
 }
 
 .item1 {
-  background: url(../assets/img/services-item-1.png);
+  background: url(./assets/img/services-item-1.png);
 }
 
 .item2 {
-  background: url(../assets/img/services-item-2.png);
+  background: url(./assets/img/services-item-2.png);
 }
 
 .item3 {
-  background: url(../assets/img/services-item-3.png);
+  background: url(./assets/img/services-item-3.png);
 }
 
 .item4 {
-  background: url(../assets/img/services-item-4.png);
+  background: url(./assets/img/services-item-4.png);
 }
 
 .item5 {
-  background: url(../assets/img/services-item-5.png);
+  background: url(./assets/img/services-item-5.png);
 }
 
 .item6 {
-  background: url(../assets/img/services-item-6.png);
+  background: url(./assets/img/services-item-6.png);
 }
 
 .footer {
@@ -496,6 +584,11 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .footer-wrapper {
+    justify-content: center;
+  }
+}
 
 .copyright {
   font-style: normal;
@@ -505,12 +598,22 @@ span {
   color: #666D89;
   padding-left: 40px;
 }
+@media (max-width: 768px) {
+  .copyright {
+    display: none;
+  }
+}
 
 .social {
   padding-right: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .social {
+    padding-right: 0;
+  }
 }
 
 .social li {
@@ -529,25 +632,25 @@ span {
 .facebook {
   width: 8px;
   height: 14px;
-  background: url(../assets/img/ico-facebook--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-facebook--nocircle.png) no-repeat;
 }
 
 .google {
   width: 14px;
   height: 14px;
-  background: url(../assets/img/ico-google-plus--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-google-plus--nocircle.png) no-repeat;
 }
 
 .twitter {
   width: 14px;
   height: 12px;
-  background: url(../assets/img/ico-twitter--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-twitter--nocircle.png) no-repeat;
 }
 
 .linkedin {
   width: 14px;
   height: 14px;
-  background: url(../assets/img/ico-linkedin--nocircle.png) no-repeat;
+  background: url(./assets/img/ico-linkedin--nocircle.png) no-repeat;
 }
 
 .social li:hover {

@@ -33,26 +33,41 @@
   justify-content: space-between;
   @include font(12px, normal, 12px);
   @include media-tablet {
-    padding-left: 30px;
+    padding-left: 0px;
+    margin: auto;
   }
   @include media-mobile {
     justify-content: center;
-    max-width: 177px;
+    max-width: 266px;
     padding-left: 0;
     margin: auto;
   }
+  @include media-finish {
+    max-width: 266px;
+  }
 }
 
-.nav-portfolio li {
+.tag {
+  cursor: pointer;
   color: $color-text;
   border: 1px solid;
   border-radius: 5px;
   padding: 4px;
-}
+  &-inactive {
+    cursor: pointer;
+    color: $color-text;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  &-selected {
+    color: #ffffff;
+  }
 
-.nav-portfolio li:hover {
-  color: #ffffff;
-  cursor: pointer;
+  @include media-mobile {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
 }
 
 .image-list li {
@@ -95,12 +110,13 @@
     }
     @include media-tablet {
       padding: 26px 20px 66px 20px;
-      max-height: 495px;
+      max-height: 500px;
       overflow: hidden;
       max-width: 320px;
     }
     @include media-mobile {
       justify-content: center;
+      max-height: 420px;
     }
   }
   @include media-laptop {
@@ -113,8 +129,11 @@
     padding: 6px;
   }
   @include media-mobile {
-    width: 33vw;
+    width: 125px;
     padding: 6px;
+  }
+  @include media-finish {
+    width: 125px;
   }
 }
 

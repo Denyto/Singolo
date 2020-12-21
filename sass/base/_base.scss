@@ -19,6 +19,14 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
 * {
   font-family: Lato;
   margin: 0;
@@ -31,6 +39,9 @@ h1 {
   letter-spacing: -0.03em;
       @include media-tablet {
     padding-left: 90px;
+  }
+        @include media-finish {
+    padding-left: 70px;
   }
 }
 
@@ -56,6 +67,9 @@ h3 {
   width: 220px;
   height: 77px;
   vertical-align: middle;
+      @include media-finish {
+   width: 170px;
+  }
 }
 
 .item-text {

@@ -16,7 +16,7 @@
   @include media-laptop {
     padding: 18px 44px 38px 40px;
   }
-    @include media-tablet {
+  @include media-tablet {
     padding: 18px 30px 38px 30px;
   }
 }
@@ -41,6 +41,10 @@
     max-width: 687px;
     min-height: 418px;
   }
+  @include media-finish {
+    max-width: 266px;
+    min-height: 418px;
+  }
 }
 
 .services-list li {
@@ -57,15 +61,21 @@
     height: 129px;
     padding-right: 35px;
   }
-      @include media-tablet {
+  @include media-tablet {
     padding-right: 0px;
     margin: auto;
+  }
+  @include media-finish {
+    justify-content: center;
   }
 }
 
 .logo {
   width: 60px;
   height: 60px;
+    @include media-finish {
+    margin-right: 20px;
+  }
 }
 
 .item1 {

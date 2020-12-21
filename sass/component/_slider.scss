@@ -2,8 +2,8 @@
   padding: 55px 0;
   background: $color-additional;
   box-shadow: 0 6px 1px #dd8386;
-    @include media-laptop {
-  padding: 39px 0;
+  @include media-laptop {
+    padding: 39px 0;
   }
 }
 
@@ -11,6 +11,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-mobile {
+    justify-content: center;
+  }
 }
 
 .slider-boder {
@@ -19,18 +22,25 @@
 
 .slider-content {
   margin: 0 auto;
-  background: url(./assets/img/slider-content.png) no-repeat;
   height: 483px;
   width: 796px;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 101%;
+  }
   @include media-laptop {
-    background: url(./assets/img/slider-content768.png) no-repeat;
     height: 364px;
     width: 600px;
   }
-@include media-tablet {
-  background: url(./assets/img/slider-content375.png) no-repeat;
+  @include media-tablet {
     height: 178px;
     width: 293px;
+  }
+  @include media-mobile {
+    height: 155px;
+    width: 250px;
+    margin: 0;
   }
 }
 
@@ -39,6 +49,9 @@
   width: 16px;
   height: 27px;
   background-image: url(./assets/img/arrow-left.png);
+  @include media-mobile {
+    margin: 0;
+  }
   &:hover {
     background-image: url(./assets/img/arrow-left-hover.png);
     cursor: pointer;
@@ -50,7 +63,10 @@
   width: 16px;
   height: 27px;
   background-image: url(./assets/img/arrow-right.png);
-    &:hover {
+  @include media-mobile {
+    margin: 0;
+  }
+  &:hover {
     background-image: url(./assets/img/arrow-right-hover.png);
     cursor: pointer;
   }

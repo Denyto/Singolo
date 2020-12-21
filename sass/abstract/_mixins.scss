@@ -16,3 +16,7 @@ line-height: $height;
 @mixin media-mobile {
     @media (max-width: $mobile-width) { @content; }
 }
+
+@mixin media-finish {
+    @media (max-width: $finish-width) { @content; }
+}

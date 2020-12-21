@@ -12,6 +12,9 @@
       display: none;
     }
   }
+      @include media-tablet {
+     padding: 21px 0px 20px 0px;
+    }
 }
 
 .wrapper-boder {
@@ -19,14 +22,15 @@
 }
 
 .navigation {
+  color: $color-wite;
   text-align: right;
   letter-spacing: -0.035em;
-  padding-top: 12px;
-  padding-right: 8px;
+  margin-top: 12px;
+  margin-right: 8px;
   display: flex;
   justify-content: space-between;
   &-link {
-    padding: 0 34px 0 0;
+    margin-left: 30px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -45,6 +49,7 @@ ul li:first-child {
 a {
   text-decoration: none;
   color: $color-wite;
+    transition: all 0.3s;
 }
 
 .logotype {
@@ -59,7 +64,7 @@ a {
 a:hover {
   color: #f06c64;
   text-decoration: underline;
-  transition: all 0.3s;
+
 }
 
 span {

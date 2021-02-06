@@ -9,12 +9,13 @@
 }
 
 .hamburger {
+  transition: .9s;
   display: none;
   position: relative;
   width: 25px;
   height: 20px;
   @include media-tablet {
-      display: inline-block;
+    display: inline-block;
   }
   &::before {
     @extend %hamburger-line;
@@ -26,6 +27,12 @@
     bottom: 0;
     left: 0;
   }
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .hamburger-line {

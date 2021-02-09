@@ -53,6 +53,9 @@
   border: 1px solid;
   border-radius: 5px;
   padding: 4px;
+  &:hover {
+    color: $color-wite;
+  }
   &-inactive {
     cursor: pointer;
     color: $color-text;
@@ -90,6 +93,8 @@
   &-list {
     margin: 0px auto;
     max-width: 940px;
+    max-height: 555px;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -108,10 +113,11 @@
     @include media-laptop {
       padding: 26px 40px 66px 40px;
       max-width: 68vw;
+      max-height: 71vw;
     }
     @include media-tablet {
       padding: 26px 20px 66px 20px;
-      max-height: 500px;
+      max-height: 499px;
       overflow: hidden;
       max-width: 320px;
     }

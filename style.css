@@ -244,6 +244,9 @@ h3 {
   border-radius: 5px;
   padding: 4px;
 }
+.tag:hover {
+  color: #ffffff;
+}
 .tag-inactive {
   cursor: pointer;
   color: #767E9E;
@@ -277,6 +280,8 @@ h3 {
 .image-list {
   margin: 0px auto;
   max-width: 940px;
+  max-height: 555px;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -299,12 +304,13 @@ h3 {
   .image-list {
     padding: 26px 40px 66px 40px;
     max-width: 68vw;
+    max-height: 71vw;
   }
 }
 @media (max-width: 768px) {
   .image-list {
     padding: 26px 20px 66px 20px;
-    max-height: 500px;
+    max-height: 499px;
     overflow: hidden;
     max-width: 320px;
   }
@@ -461,15 +467,20 @@ a {
 }
 
 .menu-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  overflow: hidden;
-  list-style: none;
-  padding-left: 20px;
-  opacity: 0;
-  height: 0px;
-  transition: 0.5s;
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 20px;
+    opacity: 0;
+    height: 0px;
+    transition: 0.5s;
+  }
 }
 
 a:hover {
@@ -810,9 +821,9 @@ span {
 }
 
 .social li:hover {
-  background-color: #b5bdd8;
+  background-color: #b6bfdb;
   cursor: pointer;
-  border: 2px solid;
+  border: 1px solid;
   border-color: #666d89;
 }
 

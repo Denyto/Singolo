@@ -65,15 +65,18 @@ a {
   background: #2d303a;
 }
 .menu-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  overflow: hidden;
-  list-style: none;
-  padding-left: 20px;
-  opacity: 0;
-  height: 0px;
-  transition: 0.5s;
+  display: none;
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 20px;
+    opacity: 0;
+    height: 0px;
+    transition: 0.5s;
+  }
 }
 
 a:hover {

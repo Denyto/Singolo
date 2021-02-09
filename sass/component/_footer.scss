@@ -5,9 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-          @include media-tablet {
-        justify-content: center;
-      }
+    @include media-tablet {
+      justify-content: center;
+    }
   }
 }
 
@@ -18,9 +18,9 @@
   line-height: 18px;
   color: $color-heading;
   padding-left: 40px;
-        @include media-tablet {
-        display: none;
-      }
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .social {
@@ -28,9 +28,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-            @include media-tablet {
-       padding-right: 0;
-      }
+  @include media-tablet {
+    padding-right: 0;
+  }
 }
 
 .social li {
@@ -71,8 +71,8 @@
 }
 
 .social li:hover {
-  background-color: #b5bdd8;
+  background-color: #b6bfdb;
   cursor: pointer;
-  border: 2px solid;
+  border: 1px solid;
   border-color: #666d89;
 }
